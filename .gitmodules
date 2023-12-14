@@ -1,0 +1,15 @@
+[submodule "projects/deno"]
+	path = projects/deno
+	url = https://www.github.com/tannal/deno
+[submodule "projects/servo"]
+	path = projects/servo
+	url = https://www.github.com/tannal/servo
+[submodule "projects/reveal.js"]
+	path = projects/reveal.js
+	url = https://www.github.com/tannal/reveal.js
+[submodule "projects/node"]
+	path = projects/node
+	url = https://www.github.com/tannal/node
+[submodule "projects/zero-md"]
+	path = projects/zero-md
+	url = https://www.github.com/tannal/zero-md
