@@ -1,0 +1,3 @@
+struct AMono {
+  int x;
+};
