@@ -1,0 +1,36 @@
+<h2>
+    web worker demo
+</h2>
+<button onclick="startComputation()">Start computation</button>
+
+
+<script>
+ function startComputation() {
+
+  worker.postMessage({'cmd': 'average', 'data': [1, 2, 3, 4]});
+
+ }
+
+ var worker = new Worker('doWork.js');
+
+ worker.addEventListener('message', function(e) {
+
+  console.log(e.data);
+
+ }, false);
+
+
+    function calculateAverage(array) {
+        return array.reduce((acc, cur) => acc + cur, 0) / array.length;
+    }
+</script>
+
+<script>
+
+    let worker = new Worker('task.js')
+    setInterval(() => { console.log("I'm the script_thread")})
+
+    worker.postMessage();
+<script>
+
+
